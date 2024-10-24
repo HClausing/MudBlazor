@@ -31,5 +31,7 @@ namespace MudBlazor.Examples.Data.Models
         public override int GetHashCode() => Name?.GetHashCode() ?? 0;
 
         public override string ToString() => $"{Sign} - {Name}";
+
+        public DateTime LoadedAt { get; set; } = DateTime.Now;
     }
 }
